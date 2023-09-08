@@ -1,0 +1,76 @@
+.swipe-left-hidden{
+    opacity: 0;
+    transform: translateX(-100px);
+    filter: blur(10px);
+    transition: all 1s ease-in;
+}
+.swipe-right-hidden{
+    opacity: 0;
+    transform: translateX(100px);
+    filter: blur(10px);
+    transition: all 1s ease-in;
+    transition-delay: calc(100ms * var(--order));
+}
+
+.swipe-left-show, .swipe-right-show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+.swipe-top-hidden{
+    opacity: 0;
+    transform: translateY(-100px);
+    filter: blur(10px);
+    transition: all 1s ease-in;
+    transition-delay: calc(100ms * var(--order));
+}
+
+.swipe-bottom-hidden{
+    opacity: 0;
+    transform: translateY(100px);
+    filter: blur(10px);
+    transition: all 1s ease-in;
+}
+
+.swipe-top-show, .swipe-bottom-show{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.swipe-center-hidden{
+    opacity: 0;
+    transform: translate(-100px, -100px);
+    filter: blur(10px);
+    transition: all 1s ease-in;
+}
+
+.swipe-center-show{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    filter: blur(0);
+}
+.swipe-cartoon-hidden{
+    opacity: 0;
+    /* transform: translate(0, -20%); */
+    filter: blur(10px);
+    transition: all 1s ease-in;
+}
+
+.swipe-cartoon-show{
+    opacity: 1;
+    /* transform: translate(-40px, 0); */
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion){
+    .swipe-top-hidden,
+    .swipe-bottom-hidden,
+    .swipe-left-hidden,
+    .swipe-right-hidden,
+    .swipe-center-hidden,
+    .swipe-cartoon-hidden{
+        transition: none;
+    }
+}

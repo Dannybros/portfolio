@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Danny Website</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="ring">
+            Loading
+            <span class="light"></span>
+        </div>
+    </div>
+
+    <div id="scrollTop">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    <section class="p-6 lg:px-24 lg:py-16 relative xl:container xl:mx-auto">
+        <div class="flex justify-between items-center mb-10 z-20 swipe-top-hidden">
+            <div class="logo">
+                <i class="fa-brands fa-pied-piper-alt text-5xl lg:text-7xl text-yellow-400"></i>
+            </div>
+            <div class="md:w-1/3 text-sm md:text-lg lg:text-2xl">
+                <ul class="flex list-none justify-between my-4">
+                    <li class="px-1 sm:px-4" role="button" onclick="navEducation()">Education</li>
+                    <li class="px-1 sm:px-4" role="button" onclick="navProjects()">Projects</li>
+                    <li class="px-1 sm:px-4" role="button" onclick="navContact()">Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="photo-box -z-10 swipe-cartoon-hidden">
+            <img src="./img/man.png" alt="">
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 z-20">
+            <div class="header col-span-3 lg:col-span-2 h-96 flex flex-col justify-between swipe-left-hidden">
+                <div class="text-2xl/relaxed md:text-5xl/relaxed font-bold">
+                    <span class="cursor-default">
+                        Hello there, My Name is 
+                    </span> <br/>
+                    <span id="magic-box" class="magic-box">
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span class="short_term"> Danny. </span>
+                        <span class="name_word">Daring</span>
+                        <span class="name_word">Artistic</span>
+                        <span class="name_word">Noble</span>
+                        <span class="name_word">Neat</span>
+                        <span class="name_word">Youth</span>
+                    </span> <br/>
+                    <div class="markdown mt-5 rounded-lg "></div>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://www.google.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook rounded-full text-xl"></i>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram rounded-full text-xl"></i>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github rounded-full text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="intro-box col-span-3 lg:col-span-1 lg:h-96 flex flex-col justify-between align-start swipe-right-hidden">
+                <div class="my-4 lg:my-0">
+                    <p class="text-slate-400 tracking-widest mb-3"> - Introduction </p>
+                    <p class="text-3xl"> Web and Desktop Application Developer.</p>
+                </div>
+                <p class="text-slate-400 tracking-widest text-justify">
+                    Hi, I'm Danny, a Korean who studied at the National University of Laos. I graduated with two bachelor's degrees, one in English
+                     and one in Computer Science. I'm passionate about using my skills in language and technology to create innovative and impactful projects.
+                </p>
+                <button class="mt-5 lg:mt-0 py-2 px-4 w-auto bg-yellow-600 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                    See My Previous Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="education_section" class="bg-zinc-900 overflow-hidden pb-12">
+        <div class="p-6 lg:px-24 lg:py-16 xl:container xl:mx-auto">
+            <div class="text-center text-5xl font-bold mb-32 mt-12 swipe-bottom-hidden" style="animation-delay: 3s;">
+                Education Background
+            </div>
+            <main class="education-box flex flex-col md:flex-row items-center justify-between"> 
+                <div class="education-info w-full md:w-1/2 lg:w-2/5 swipe-left-hidden">
+                    <p class="text-2xl font-bold mb-3">
+                        Bachelor of English Language Degree
+                    </p>
+                    <p class="text-lg text-gray-400 text-justify">
+                        Managed to get English Language Degree in NUOL (National University Of Laos) after studying 2 years on "continue" English course.
+                        Finally done with learning English!!! Wait, I have to take IELTS to prove my english skill internationally? NOOOOO!!!
+                    </p>
+                </div>
+                <div class="education-image mt-12 w-full md:w-1/2 md:mt-0 swipe-right-hidden" style="--order: 1;">
+                    <div class="eduation-bg-2"></div>
+                    <div class="eduation-tool red-book"></div>
+                    <div class="eduation-tool green-book"></div>
+                    <canvas id="circle2" class="hidden lg:inline"></canvas>
+                </div>
+            </main>
+
+            <main class="education-box flex flex-col-reverse md:flex-row items-center justify-between mt-12"> 
+                <div class="education-image mt-12 w-full md:w-1/2 md:mt-0 swipe-left-hidden">
+                    <div class="eduation-bg-1"></div>
+                    <div class="eduation-tool computer"></div>
+                    <canvas id="circle1" class="hidden lg:inline"></canvas>
+                </div>
+                <div class="education-info w-full md:w-1/2 lg:w-2/5 swipe-right-hidden" style="--order: 1;">
+                    <p class="text-2xl font-bold mb-3">
+                        Bachelor of Computer Science degree
+                    </p>
+                    <p class="text-lg text-gray-400 text-justify">
+                        Getting a computer science degree is a challenging but rewarding experience. It required dedication, and a passion for 
+                        learning coding and computer. Ha! Sike! I actually learned most of coding from youtube, though very much grateful for achieving my goal of getting a computer science degree from NUOL.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+    
+    <section class="skill_section">
+        <div id="left-side" class="skill-side-section relative md:absolute">
+            <div class="side-content relative left-content p-6 lg:px-24 lg:py-16">
+                <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-3 md:p-7">
+                    <div class="lang-box swipe-top-hidden" style="--order: 1">
+                        <div class="shadow"></div>
+                        <div class="content">
+                            <div class="percent" data-text="Korean" style="--num: 95">
+                                <div class="dot"></div>
+                                <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number mt-3">
+                                <h2>Native</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-box swipe-top-hidden" style="--order: 2">
+                        <div class="shadow"></div>
+                        <div class="content">
+                            <div class="percent" data-text="English" style="--num: 90">
+                                <div class="dot"></div>
+                                <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number mt-3">
+                                <h2 class="text-2xl md:text-3xl">90 <span>%</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-box swipe-top-hidden" style="--order: 3">
+                        <div class="shadow"></div>
+                        <div class="content">
+                            <div class="percent" data-text="Chinese" style="--num: 40">
+                                <div class="dot"></div>
+                                <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number mt-3">
+                                <h2 class="text-2xl md:text-3xl">40 <span>%</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-box swipe-top-hidden" style="--order: 4">
+                        <div class="shadow"></div>
+                        <div class="content">
+                            <div class="percent" data-text="Lao" style="--num: 70">
+                                <div class="dot"></div>
+                                <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="number mt-3">
+                                <h2 class="text-2xl md:text-3xl">70 <span>%</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-3xl mb-3 sm:mb-0 sm:text-5xl text-center font-bold w-full z-20 md:w-1/2 font-mono">
+                    Communication Languages  
+                </div>
+                <canvas id="circle3" class="hidden md:block absolute left-0 top-0 w-full h-full z-10 translate-x-1/2"></canvas>
+            </div>
+        </div>
+        <div id="slider" class="z-20 hidden md:flex" data-mouse-down-at="0" data-prev-percentage="50">
+            <i class="fa-solid fa-arrows-left-right slider_icon"></i>
+        </div>
+        <div id="right-side" class="skill-side-section relative w-full md:absolute">
+            <div class="side-content relative p-6 lg:px-24 lg:py-16 ">
+                <div class="text-3xl sm:text-5xl text-center font-bold z-20 w-full md:w-1/2 font-mono">
+                    Programming Languages  
+                </div>
+                <div class="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10 p-7">
+                    <div class="lang-animation swipe-right-hidden">
+                        <div class="lang-flip">
+                            <div class="front_card bg-orange-500">
+                                HTML
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/html.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-top-hidden" style="animation-delay: 0.5s;">
+                        <div class="lang-flip">
+                            <div class="front_card bg-blue-500">
+                                CSS
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/html.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-left-hidden">
+                        <div class="lang-flip">
+                            <div class="front_card bg-yellow-500">
+                                Javascript
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/javascript.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-left-hidden" style="animation-delay: 0.5s;">
+                        <div class="lang-flip">
+                            <div class="front_card bg-neutral-900">
+                                React
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/react.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-right-hidden">
+                        <div class="lang-flip">
+                            <div class="front_card bg-slate-500">
+                                Next js
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/next-js.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-left-hidden" style="animation-delay: 0.5s;">
+                        <div class="lang-flip">
+                            <div class="front_card bg-green-700">
+                                Node js
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/node.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-left-hidden">
+                        <div class="lang-flip">
+                            <div class="front_card bg-violet-900">
+                                PHP
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/php.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-animation swipe-bottom-hidden" style="animation-delay: 0.5s;">
+                        <div class="lang-flip">
+                            <div class="front_card bg-purple-700 ">
+                                C#
+                            </div>
+                            <div class="back_card">
+                                <img src="./img/lang/csharp.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="circle4" class="hidden md:block absolute left-0 top-0 w-full h-full z-10 -translate-x-1/2"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="project_section" class="relative overflow-hidden">
+        <main class="proj-img grid grid-cols-2 md:grid-cols-4 px-4 gap-x-4 md:gap-x-12 md:px-20">
+            <h1 class="proj_title text-5xl z-40 font-black select-none text-black swipe-center-hidden">
+                Projects
+            </h1>
+            <div class="gallery">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+
+                <img src="https://picsum.photos/seed/picsum/200/300" alt=""> 
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+            </div>
+            <div class="gallery2">
+                <img data-index="0" data-status="inactive" src="https://images.unsplash.com/photo-1663583513676-9f6361cd859d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img data-index="1" data-status="inactive" src="https://images.unsplash.com/photo-1663530294185-5af3692326c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" />
+                <img data-index="2" data-status="inactive" src="https://images.unsplash.com/photo-1663579111009-863bc978c78e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                <img data-index="3" data-status="inactive" src="https://images.unsplash.com/photo-1663492412083-17bfcad3c533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+
+                <img data-index="0" data-status="inactive" src="https://images.unsplash.com/photo-1663583513676-9f6361cd859d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img data-index="1" data-status="inactive" src="https://images.unsplash.com/photo-1663530294185-5af3692326c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" />
+                <img data-index="2" data-status="inactive" src="https://images.unsplash.com/photo-1663579111009-863bc978c78e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                <img data-index="3" data-status="inactive" src="https://images.unsplash.com/photo-1663492412083-17bfcad3c533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                
+            </div>
+            <div class="gallery2">
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+
+                <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666005487638-61f45819c975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img class="nav-link-image" src="https://images.unsplash.com/photo-1666091863721-54331a5db52d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+            </div>
+            <div class="gallery">
+                <img data-index="0" data-status="inactive" src="https://images.unsplash.com/photo-1663583513676-9f6361cd859d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img data-index="1" data-status="inactive" src="https://images.unsplash.com/photo-1663530294185-5af3692326c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" />
+                <img data-index="2" data-status="inactive" src="https://images.unsplash.com/photo-1663579111009-863bc978c78e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                <img data-index="3" data-status="inactive" src="https://images.unsplash.com/photo-1663492412083-17bfcad3c533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+
+                <img data-index="0" data-status="inactive" src="https://images.unsplash.com/photo-1663583513676-9f6361cd859d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                <img data-index="1" data-status="inactive" src="https://images.unsplash.com/photo-1663530294185-5af3692326c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" />
+                <img data-index="2" data-status="inactive" src="https://images.unsplash.com/photo-1663579111009-863bc978c78e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+                <img data-index="3" data-status="inactive" src="https://images.unsplash.com/photo-1663492412083-17bfcad3c533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
+                
+            </div>
+        </main>
+
+        <nav id="proj-nav">
+            <div id="nav-links" data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <img class="nav-link-image" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" draggable="false"/>
+                    <a class="nav-link-label hover:text-sky-500 hover:underline " onclick="goToProject('./projects/medicine.html')" role="button">
+                        Projects
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <button id="nav-toggle" class="tooltip" type="button" onclick="toggleNav()" onmouseout="outProjectTooltip()">
+            <span class="tooltiptext" id="projectToolTip">Click to open list of projects</span>
+            <i class="open fa-solid fa-bars"></i>
+            <i class="close fa-solid fa-xmark"></i>
+        </button>
+    </section>
+
+    <section class="comment_section">
+        <div class="bounce_platform">
+            <div class="block_box text-xs md:text-sm lg:text-xl">
+                <span class="z-10">
+                    Strong understanding of computer. <br/>
+                    Patient and have a willingness to help others. <br/>
+                    Team player and able to work independently !!!
+                </span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact_section p-5 md:p-30 pb-20">
+        <div class="contact_box p-10 h-full w-full md:w-2/3 md:mx-auto flex flex-col items-center justify-around">
+            <p class="text-center relative">
+                <span class="block mb-10 select-none">Contact me</span>
+                <a href = "mailto: hp24@gmail.com" class="block animate-bounce text-3xl md:text-6xl cursor-pointer tooltip" onmouseout="outEmailTooltip()" onclick="copyEmail()">
+                    <span class="tooltiptext" id="emailToolTip">Send Email</span>
+                    hp24@gmail.com
+                </a>
+            </p>
+            <div class="flex justify-around w-full md:w-1/2 mx-auto">
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const loader = document.getElementById("preloader");
+
+    window.addEventListener("load", ()=>{
+        loader.style.display="none";
+    })
+</script>
+
+<script src="js/nav.js"></script> 
+<script src="js/star.js"></script> 
+<script src="js/arc.js"></script> 
+<script src="js/slider.js"></script> 
+<script src="js/hover.js"></script> 
+<script src="js/carousel.js"></script> 
+<script src="js/bouncing.js"></script> 
+<script src="js/scroll.js"></script> 
+<script src="js/tooltip.js"></script>
+<script src="https://kit.fontawesome.com/85e80461ab.js" crossorigin="anonymous"></script>
+</html>
