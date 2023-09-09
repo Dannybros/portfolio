@@ -11,12 +11,12 @@ body {
 }
 .container{
     width: 80%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     padding: 10px;
 }
 .carousel{
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 17/9;
     position: relative;
 }
 .slide{
@@ -71,10 +71,133 @@ body {
 .carousel-btn.next {
     right: 1rem;
 }
+
+.project_content{
+    display: flex;
+}
+
+.project_content article{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 0 20px 0 0;
+}
+.project_content article:last-child{
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project_content p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+section > h3{
+    font-size: clamp(25px, 2vw, 40px);
+}
+
+.lang-box{
+    display: flex;
+}
+
+.lang-box figure{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #3364bb;
+}
+
+.btn-links{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.btn-links > a{
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px 0;
+    text-align: center;
+    min-width: 80px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in;
+}
+
+.btn-links > a:hover{
+    background: #e1e1e1;
+    color: black;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+  
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover > .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 @media (width <= 500px){
     .container{
         width: 90%;
         margin: 20px auto;
         padding: 0;
     }
-  }
+    section h3{
+        text-align: center;
+    }
+    .lang-box figure{
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+@media (width <= 1000px){
+    .project_content{
+        flex-direction: column-reverse;
+    }
+    .btn-links{
+        margin-block: 20px;
+    }
+    .lang-box{
+        display: block;
+    }
+    
+    .lang-box figure{
+        display: inline-block;
+        margin-block: 10px;
+    }
+    .project_content article{
+        padding: 0px !important;
+    }
+}
