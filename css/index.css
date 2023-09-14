@@ -173,10 +173,10 @@ body{
     background-repeat: no-repeat;
 }
 .eduation-bg-1{
-    background-image: url('../img/Education-bg.svg');
+    background-image: url('../img/home/Education-bg.svg');
 }
 .eduation-bg-2{
-    background-image: url('../img/background-2.svg');
+    background-image: url('../img/home/background-2.svg');
 }
 .eduation-tool{
     position: absolute;
@@ -184,7 +184,7 @@ body{
     background-repeat: no-repeat;
 }
 .computer{
-    background-image: url('../img/computer.svg');
+    background-image: url('../img/home/computer.svg');
     top: 35%;
     transform: translateY(-35%);
     height: 200px;
@@ -192,7 +192,7 @@ body{
     animation: levitation-1 10s ease-in-out infinite alternate;
 }
 .red-book{
-    background-image: url('../img/red-book.svg');
+    background-image: url('../img/home/red-book.svg');
     top: 35%;
     transform: translateY(-35%);
     height: 100px;
@@ -200,7 +200,7 @@ body{
     animation: levitation-2 6s ease-in-out infinite alternate;
 }
 .green-book{
-    background-image: url('../img/green-book.svg');
+    background-image: url('../img/home/green-book.svg');
     top: 50%;
     transform: translateY(-50%);
     height: 100px;
@@ -291,13 +291,13 @@ canvas{
     z-index: 30;
 }
 .left-content{
-    background-image:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)), url(../img/language.png);
+    background-image:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)), url(../img/home/language.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 #right-side {
-    background-image:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/coding.jpg) !important;
+    background-image:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/home/coding.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

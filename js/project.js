@@ -32,3 +32,12 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll("[data-img-to-show]").forEach(section => {
   observer.observe(section)
 })
+
+window.addEventListener('resize', function(event) {
+  if (window.innerWidth <= 500) {
+    document.getElementsByTagName("video")[0].controls = true;
+  }else{
+
+    document.getElementsByTagName("video")[0].controls = false;
+  }
+});
