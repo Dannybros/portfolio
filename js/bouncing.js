@@ -5,8 +5,8 @@ const FPS = 60;
 // Logo moving velocity Variables
 let xPosition = 10;
 let yPosition = 10;
-let xSpeed = 4;
-let ySpeed = 4;
+let xSpeed = 3.5;
+let ySpeed = 3.5;
 
 function update() {
   block.style.left = xPosition + "px";
@@ -22,26 +22,6 @@ function moveBlock(){
         ySpeed = -ySpeed;
     }
 
-    // if (xPosition + block.clientWidth >= platform.clientWidth){
-    //     xSpeed = -xSpeed;
-    //     xPosition = platform.clientWidth - block.clientWidth;
-    //     // block.style.background = randomColor();
-    // }else if (xPosition <= 0){
-    //     xSpeed = -xSpeed;
-    //     xPosition = 0;
-    //     // block.style.background = randomColor();
-    // }
-
-    // if (yPosition + block.clientHeight >= platform.clientHeight){
-    //     ySpeed = -ySpeed;
-    //     yPosition = platform.clientHeight - block.clientHeight;
-    //     // block.style.background = randomColor();
-    // }else if (yPosition <= 0){
-    //     ySpeed = -ySpeed;
-    //     yPosition = 0;
-    //     // block.style.background = randomColor();
-    // }
-    
     xPosition += xSpeed;
     yPosition += ySpeed;
 
