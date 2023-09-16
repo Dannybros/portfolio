@@ -31,10 +31,8 @@ function navEducation(){
 window.onscroll = function()
 {
     if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
-        console.log("yes");
         btnScollTop.style.visibility="visible"
     }else{
         btnScollTop.style.visibility="hidden"
-
     }
 };

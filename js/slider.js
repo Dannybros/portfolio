@@ -6,7 +6,6 @@ const slider_icon = document.querySelector('.slider_icon');
 
 const handleOnDown = e => {
     slider.dataset.mouseDownAt = e.clientX;
-    console.log(e.clientX);
 }
 
 const handleOnUp = () => {
