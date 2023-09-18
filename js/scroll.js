@@ -10,9 +10,11 @@ function scrollAnimationDirection(direction){
     hiddenElements.forEach((el)=>observer.observe(el));
 }
 
-scrollAnimationDirection("left");
-scrollAnimationDirection("right");
-scrollAnimationDirection("top");
-scrollAnimationDirection("bottom");
-scrollAnimationDirection("center");
-scrollAnimationDirection("cartoon");
+window.addEventListener("load", ()=>{
+    scrollAnimationDirection("left");
+    scrollAnimationDirection("right");
+    scrollAnimationDirection("top");
+    scrollAnimationDirection("bottom");
+    scrollAnimationDirection("center");
+    scrollAnimationDirection("cartoon");
+})
